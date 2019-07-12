@@ -2,7 +2,7 @@
     Mark Butcher    Bsc (Hons) MPhil MIET
 
     M.J.Butcher Consulting
-    Birchstrasse 20f,    CH-5406, Rütihof
+    Birchstrasse 20f,    CH-5406, RÃ¼tihof
     Switzerland
 
     www.uTasker.com    Skype: M_J_Butcher
@@ -1017,7 +1017,7 @@ extern void fnStartTick(void)
     #if !defined INTERRUPT_VECTORS_IN_FLASH                              // {111}
     VECTOR_TABLE *ptrVect;
         #if defined _WINDOWS
-    ptrVect = (VECTOR_TABLE *)((unsigned char *)((unsigned char *)&vector_ram));
+    ptrVect = (VECTOR_TABLE *)((unsigned char *)&vector_ram));
         #else
     ptrVect = (VECTOR_TABLE *)(RAM_START_ADDRESS);
         #endif
